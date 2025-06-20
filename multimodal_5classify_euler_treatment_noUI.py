@@ -88,7 +88,7 @@ def main():
     fusion_model = ImprovedFusionModel(temporal_length=150, num_classes=5).to(device)
     fusion_model = load_model_checkpoint(
         fusion_model,
-        'models/mutimodal/best_model_20241209_221736.pth',
+        'your_path\your_signal_model.pth',
         device
     )
     fusion_model.eval()
@@ -108,7 +108,7 @@ def main():
         baseline_means = {k:0 for k in ['PWHH','PA','A1','A2','PH','CT','PI','Tn','ΔT','DT']}
 
     # ——— 三：读取视频 & 让用户在 640×480 窗口中选 ROI ———
-    video_path = 'E:/amplify/input/hx_24_10_08/02014 1期.mp4'
+    video_path = 'your_path\your_video.mp4'
     cap = cv2.VideoCapture(video_path)
     ret, frame0 = cap.read()
     if not ret:
