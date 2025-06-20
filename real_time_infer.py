@@ -183,7 +183,7 @@ if __name__ == "__main__":
     print(f">>> 使用设备：{device}")
 
     # 2. 微调后的权重绝对路径，请改为你本地路径
-    WEIGHTS_PATH = "E:/Image_PI_identify/runs/detect/train3/weights/best.pt"
+    WEIGHTS_PATH = "your_path\your_YOLOmodel.pt"
 
     # 加载模型
     model = load_model(WEIGHTS_PATH, device)
