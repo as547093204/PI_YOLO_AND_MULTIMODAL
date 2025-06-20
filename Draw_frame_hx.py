@@ -70,9 +70,9 @@ def extract_frames_from_video(video_path, output_dir, segments=3, frames_per_seg
 def main():
     # ———— 配置区 ————
     # 1. 输入视频文件夹路径（请改为你的实际路径）
-    input_dir = r"E:\amplify\input\continuous_8_days\DTPI"
+    input_dir = r"data\input\your_path"
     # 2. 输出图片保存路径（请改为你的实际路径）
-    output_dir = r"E:\Image_PI_identify\data\hx\different_stages\DTPI"
+    output_dir = r"data\output\your_path"
 
     # 创建输出目录（如果不存在就新建）
     if not os.path.exists(output_dir):
