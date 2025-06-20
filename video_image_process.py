@@ -18,7 +18,7 @@ import psutil
 import os
 
 
-log_path = "E:/ulcer_classify/logs/Euler_amplify"
+log_path = "your_path/logs/Euler_amplify"
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
@@ -738,7 +738,7 @@ def emv(inputVideoPath, outputVideoPath, maxLevel, freqLow, freqHigh, alpha, chr
 
 # 在调用处添加计时
 if __name__ == "__main__":
-    emv('E:/amplify/input/hx032.mp4',
-        'E:/Ulcer_classify/input/hx032_rebuild_CPU.mp4',
+    emv('your_path/your_video.mp4',
+        'your_path/your_video_rebuild.mp4',
         6, 0.83 / 2, 1.0 / 2, 100.0, 1, 0, -1, -1,
         "color", "ideal")
