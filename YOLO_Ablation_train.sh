@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/ubuntu/Image_PI_identify
+cd /home/ubuntu/your_path
 
 # 全增强
 yolo detect train model=yolov8m.pt data=data/yolov5pytorch_PI/data.yaml epochs=350 batch=16 imgsz=640 device=0 mosaic=1 hsv_h=0.015 hsv_s=0.7 hsv_v=0.4 flipud=0.5 fliplr=0.5 name=exp_full
