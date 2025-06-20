@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 # 要抓取的网页 URL（页面上的所有图片链接会被下载）
 BASE_URL = "https://www.medetec.co.uk/slide%20scans/pressure-ulcer-images-b/index.html"
 # 本地保存图片的目录（请自行修改为想要存放图片的路径）
-SAVE_DIR = r"E:\Image_PI_identify\data\download_ulcers"  # 例如：r"C:\Users\YourName\Pictures\PressureUlcers"
+SAVE_DIR = r"your_path\data\download_ulcers"  # 例如：r"C:\Users\YourName\Pictures\PressureUlcers"
 
 # 支持的图片扩展名，用来过滤非图片链接
 VALID_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"}
