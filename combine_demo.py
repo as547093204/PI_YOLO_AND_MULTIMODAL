@@ -13,10 +13,10 @@ from model import ImprovedFusionModel
 from video_image_process import emvCoreColor
 
 # ----------------- 配置 -----------------
-WEIGHTS_PATH = "E:/Image_PI_identify/runs/detect/train4/weights/best.pt"
-FUSION_CKPT = 'models/mutimodal/best_model_20241209_221736.pth'
-BASELINE_EXCEL = 'data/ulcer_signal_0.xlsx'
-VIDEO_PATH = 'E:/amplify/input/hx_24_10_08/02014 1期.mp4'
+WEIGHTS_PATH = "/your_own_YOLO_model_path.pt/"
+FUSION_CKPT = '/your_own_iPPGsignalmodel.pth/'
+BASELINE_EXCEL = 'your_own_path/ulcer_signal_0.xlsx'
+VIDEO_PATH = 'your_own_path/02014 1期.mp4'
 
 # 类别→颜色 映射 (BGR)
 COLOR_MAP = {
